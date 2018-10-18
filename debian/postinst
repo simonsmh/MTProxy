@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+
+case "$1" in
+	configure|reconfigure)
+		if [ ! -d /etc/mtproxy/ ]; then
+			mkdir -p /etc/mtproxy/
+		fi
+		if [ -f /etc/default/mtproxy ];then
+			passwd=$(head -c 16 /dev/urandom | xxd -ps)
+			sed -i "s/<MY_SECRET>/$passwd/" /etc/default/mtproxy
+		fi
+		;;
+	abort-upgrade|abort-remove|abort-deconfigure)
+		exit 0
+		;;
+	*)
+		echo "postinst called with unknown argument \`$1'" >&2
+		exit 0
+		;;
+esac
+
+#DEBHELPER#
+
+exit 0

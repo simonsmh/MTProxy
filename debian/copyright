@@ -1,0 +1,56 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mtproxy
+Source: https://github.com/TelegramMessenger/MTProxy
+
+Files:     *
+Copyright: 2008-2015 Andrey Lopatin
+           2008-2018 Nikolai Durov
+           2009-2013 Vkontakte Ltd
+           2011-2013 Oleg Davydov
+           2012-2013 Aliaksei Levin
+           2012-2013 Arseny Smirnov
+           2012-2016 Vitaliy Valtman
+           2012-2017 Anton Maydell
+           2014-2018 Telegram Messenger Inc
+           2014-2018 Vitaly Valtman
+License:   GPL-2+
+
+Files:     common/md5.c
+Copyright: 2006-2007 Christophe Devine
+License:   LGPL-2.1
+
+License: GPL-2+
+ MTProto-proxy is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 2 of the License, or
+ (at your option) any later version.
+ .
+ MTProto-proxy is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with MTProto-proxy.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ This program is released under the GPL with the additional exemption 
+ that compiling, linking, and/or using OpenSSL is allowed.
+ You are free to remove this exemption from derived works.
+
+License: LGPL-2.1
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License, version 2.1 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1'.

@@ -1,0 +1,3 @@
+objs/bin/mtproto-proxy usr/bin/
+debian/mtproxy-config.* lib/systemd/system
+

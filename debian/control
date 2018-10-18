@@ -1,0 +1,19 @@
+Source: mtproxy
+Section: net
+Priority: optional
+Maintainer: Simon Shi <simonsmh@gmail.com>
+Build-Depends: 
+ debhelper (>=11~),
+ libssl-dev,
+ zlib1g-dev,
+Standards-Version: 4.1.4
+Homepage: https://github.com/TelegramMessenger/MTProxy
+
+Package: mtproxy
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}, curl
+Description: Simple MT-Proto proxy
+ Simple MT-Proto Proxy Server
+ for Telegram messaging app
+

@@ -1,0 +1,34 @@
+# Defaults for mtproxy initscript
+# sourced by /etc/init.d/mtproxy
+# installed at /etc/default/mtproxy by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+# Note: `START` and `GROUP` options are not recognized by systemd.
+# Please change those settings in the corresponding systemd unit file.
+
+# Enable during startup?
+START=yes
+
+
+# Ports
+CLIENT_PORT=443
+STATS_PORT=8888
+
+
+# Secret key
+SECRET=<MY_SECRET>
+
+
+# User and group to run the server as
+USER=nobody
+GROUP=nogroup
+
+# Location of telegram servers required files
+AES_PWD=/etc/mtproxy/secret.conf
+CONFFILE=/etc/mtproxy/multi.conf
+
+
+# Extra command line arguments
+DAEMON_ARGS="-M 1"
